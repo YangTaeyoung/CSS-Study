@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>속성 선택자2</title>
+	</head>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*type 속성을 가지는 모든 element 선택하여 스타일 적용*/
+			[type]
+			{
+				width:150px;
+				display: block;
+				margin-bottom: 10px;
+				background-color: yellow;
+			}
+			
+			/*버튼 태그의 type이 button인 모든 element 선택하여 스타일 적용*/
+			button[type="button"] 
+			{
+				width: 120px;
+				height: 50px;
+				margin-left: 35px;
+			}
+		</style>
+		<script>
+			
+		</script>
+	<body>
+		<form name="input" action="" method="get">
+			Firstname: <input type="text" name="Name" value="peter" size="20">
+			LastName: <input type="text" name="Name" value="Griffin" size="20">
+			<button type="button">버튼 예제</button>
+		</form>
+	</body>
+</html>
