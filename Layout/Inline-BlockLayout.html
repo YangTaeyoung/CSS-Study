@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>인라인 블록을 이용한 Layout</title>
+	<!-- clear: float속성을 중단할 때 사용 -->
+	</head>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#header
+			{
+				background-color: yellow;
+				width: 100%;
+				height: 50px;
+			}
+			#nav
+			{
+				width: 30%;
+				background-color:  red;
+				height: 150px;
+				display: inline-block;
+			}
+			#content
+			{
+				width:70%;
+				background-color: blue;
+				height: 100px;
+				display: inline-block;
+				position: absolute;
+			}
+			#footer
+			{
+				background-color:  aqua;
+				width: 100%;
+				height: 50px;
+				clear: both;
+			}
+		</style>
+		<script>
+			
+		
+		</script>
+	<body>
+		<div id="wrapper">
+			<div id="header">header</div>
+			<div id="nav">nav</div>
+			<div id="content">content</div>
+			<div id="footer">footer</div>
+		</div>
+	</body>
+</html>
