@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Transition</title>
+	<!-- 속성 값을 일정시간 동안 부드럽게(한값에서 다른 값으로) 변경 -->
+	</head>
+		<style>
+			input[type=text]
+			{
+				width: 100px;
+				-webkit-transition: width .35s ease-in-out;
+				transition: width .35s ease-in-out;
+			}
+			input[type=text]:focus
+			{
+				width: 250px;
+			}
+		</style>
+		<script>
+			
+		</script>
+	<body>
+		Search: <input type="text" name="search">
+	</body>
+</html>
