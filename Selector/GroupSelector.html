@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>그룹 선택자</title>
+	<!-- 하나 이상의 element에 동일한 스타일을 적용할 경우 사용 -->
+	</head>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			p em /*p 내의 모든 em요소*(후손 선택)*/
+			{
+				color:red;
+			} 
+			div > p /*부모요소가 div인 직계 자식의 p요소를 선택한다 (자식선택)*/ 
+			{
+				background-color:  yellow;
+			}
+			div + p /*div 바로 다음에 인접한 현재요소 p 선택(인접 형제 선택)*/
+			{
+				background-color: aqua;
+			}
+			div ~ p /*div 다음의 모든 형재요소 p 선택(형제 선택)*/
+			{
+				color: green;
+			}
+		</style>
+		<script>
+			
+		</script>
+	<body>
+		<p> 첫 번째 <em>문단</em>입니다.</p>
+		<div>
+			<p> div 내에 <em>p 요소 1</em></p>
+			<p> div 내에 <em>p 요소 2</em></p>
+			<b>
+				<p> div내의 p 요소 3</p>
+			</b>
+		</div>
+		<p>div 다음에 오는 p요소 1</p>
+		<p>div 다음에 오는 p요소 2</p>
+		<p>div 다음에 오는 p요소 3</p>
+	</body>
+</html>
